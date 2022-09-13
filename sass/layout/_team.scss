@@ -1,15 +1,25 @@
 .team-section{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #F5F4FA;
+    @media screen and (min-width: 768px) {
     padding-bottom: 94px;
     padding-top: 94px;
-    background-color: #F5F4FA;
+    }
+}
 &-main-title{
     font-weight: 700;
-font-size: 36px;
-line-height: calc(42/36);
+font-size: 28px;
+line-height: calc(33/28);
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-title-color);
-margin-bottom: 50px;
+margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42/36);
+    margin-bottom: 50px;
+}
 }
 &-additional-title{
     font-weight: 500;
@@ -30,8 +40,19 @@ margin-bottom: 16px;
 }
 &-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
 }
-}
+
+
+// .team-section-item{
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
 .team-container{
 padding-top: 30px;
@@ -42,7 +63,24 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-section-item:not(:last-child){
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .team-section-item1{
     margin-right: 30px;
+}
+.team-section-item3{
+    margin-right: 30px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .team-section-item1{
+    margin-right: 0px;
+}
+.team-section-item3{
+    margin-right: 0px;
+}
 }
 
 .team-soc-link{
@@ -73,4 +111,30 @@ border-radius: 0px 0px 4px 4px;
 
 .team-soc-icon{
     fill: #AFB1B8;
+}
+
+.tab1{
+    display: none;
+}
+
+.desk1{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .mob1{
+        display: none;
+    }
+    .tab1{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tab1{
+        display: none;
+    }
+    .desk1{
+        display: block;
+    }
 }
