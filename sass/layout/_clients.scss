@@ -35,11 +35,18 @@ margin-bottom: 50px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: block;
-    width: 210px;
+    // min-width: 130px;
+    width: 40vw;
     height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width:768px) {
+        width: 25vw;
+    }
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
     &:hover{
     border-color: #2196f3;
     cursor: pointer;
