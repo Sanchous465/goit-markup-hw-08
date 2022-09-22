@@ -4,9 +4,52 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
     &>.container{
-    display: flex;
+    // display: flex;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
+}
+
+.header-nav{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.cont-list{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.menu-button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    display: inline-flex;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-cross{
+    display: none;
+}
+
+.menu-button.is-open .icon-cross{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+
+.mob-header{
+    display: flex;
+    justify-content:space-between;
 }
 
 .header-menu-list{

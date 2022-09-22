@@ -45,6 +45,21 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header {
   background-color: var(--primary-white-color);
@@ -53,8 +68,54 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 .header > .container {
-  display: flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header > .container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cont-list {
+    display: none;
+  }
+}
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: inline-flex;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mob-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-menu-list {
@@ -268,6 +329,12 @@ li {
   color: var(--primary-title-color);
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .quality-title {
+    text-align-last: left;
+  }
 }
 .quality-text {
   font-size: 14px;
@@ -279,7 +346,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .quality-text {
-    width: 45vw;
+    width: 354px;
     margin-bottom: 0;
   }
 }
@@ -319,7 +386,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .quality-soc-item {
-    width: 45vw;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -382,9 +449,9 @@ li {
   padding-top: 60px;
   background-color: #F5F4FA;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team-section {
-    padding-bottom: 94px;
+    padding-bottom: 64px;
     padding-top: 94px;
   }
 }
@@ -446,11 +513,24 @@ li {
 }
 
 @media screen and (min-width: 768px) {
+  .team-section-item3 {
+    margin-bottom: 0;
+  }
+  .team-section-item4 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .team-section-item1 {
     margin-right: 30px;
   }
   .team-section-item3 {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-section-item1 {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -557,15 +637,20 @@ li {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   display: block;
-  width: 40vw;
+  width: 210px;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 479px) {
+  .clients-soc-link {
+    width: 40vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-soc-link {
-    width: 25vw;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,16 +771,7 @@ li {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.container-left {
-  margin-right: 70px;
-}
-
-.container-right {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .subscribe-title {
@@ -706,10 +782,6 @@ li {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-}
-
-.subscribe-list {
-  display: flex;
 }
 
 .subscribe-btn {
@@ -737,7 +809,7 @@ li {
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -758,14 +830,29 @@ input::placeholder {
 }
 
 .portfolio-section {
-  padding-top: 100px;
-  padding-bottom: 114px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-btn-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 100%;
+}
+
+.port-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 354px;
+  }
 }
 
 .portfolio-btn-item:not(:last-child) {
@@ -871,7 +958,7 @@ input::placeholder {
 
 .modal {
   width: 450px;
-  min-height: 609px;
+  max-height: 609px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -885,7 +972,7 @@ input::placeholder {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 .modal-close {

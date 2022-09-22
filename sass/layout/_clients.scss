@@ -35,14 +35,16 @@ margin-bottom: 50px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: block;
-    // min-width: 130px;
-    width: 40vw;
+    width: 210px;
     height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width:479px) {
+        width: 40vw;
+    }
     @media screen and (min-width:768px) {
-        width: 25vw;
+        width: 226px;
     }
     @media screen and (min-width:1200px) {
         width: 170px;

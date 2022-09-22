@@ -13,9 +13,17 @@
 </head>
 
 <body> 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
+        <div class="mob-header">
         <a href="WebStudio" class="header-logo">Web<span class="logo-accent">Studio</span></a>
+        <button type="button" class="menu-button is-open" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
+                <use class="icon-cross" href="./img/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+        </div>
         <nav class="header-nav">
         
             <ul class="header-menu-list">
@@ -31,7 +39,7 @@
             </ul>
         
         </nav>
-        
+        <div class="cont-list">
         <ul class="header-contact-list">
             <li class="header-contact-item">
                 <a href="mailto:info@devstudio.com" class="header-mailto">
@@ -49,7 +57,8 @@
             </li>
         </ul>
         </div>
-</header> -->
+        </div>
+</header>
 
 <main>
     <section class="hero-section">
@@ -196,7 +205,7 @@
                     </ul>
                     </div>
                 </li>
-                <li class="team-section-item">
+                <li class="team-section-item team-section-item2">
                     <img src="./img/img2-mob.jpg" alt="Команда" class="mob1" width="100%"/>
                     <img src="./img/img2-tab.jpg" alt="Команда" class="tab1" width="100%"/>
                     <img src="./img/img2-desk.jpg" alt="Команда" class="desk1" width="100%"/>
@@ -282,7 +291,7 @@
                     </ul>
                     </div>
                 </li>
-                <li class="team-section-item">
+                <li class="team-section-item team-section-item4">
                     <img src="./img/img4-mob.jpg" alt="Команда" class="mob1" width="100%"/>
                     <img src="./img/img4-tab.jpg" alt="Команда" class="tab1" width="100%"/>
                     <img src="./img/img4-desk.jpg" alt="Команда" class="desk1" width="100%"/>
@@ -535,5 +544,6 @@
             </div>
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

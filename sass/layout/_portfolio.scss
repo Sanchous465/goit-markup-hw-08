@@ -1,12 +1,27 @@
 .portfolio-section{
-    padding-top: 100px;
-    padding-bottom: 114px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-btn-list{
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    width: 100%;
+}
+
+.port-img{
+    width: 100%;
+}
+
+.portfolio-item{
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
 }
 
 .portfolio-btn-item:not(:last-child){
