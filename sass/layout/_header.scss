@@ -64,12 +64,16 @@
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
-font-size: 26px;
-line-height: calc(31/26);
+font-size: 24px;
+line-height: calc(28/24);
 letter-spacing: 0.03em;
-
 color: var(--accent-color);
-margin-right: 93px;
+margin-right: 88px;
+@media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31/26);
+    margin-right: 93px;
+}
 }
 
 span{
@@ -86,7 +90,13 @@ span{
 }
 
 .header-contact-item{
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width:1199px) {
+    .header-contact-item{
+        margin-left: 50px;
+    }
 }
 
 .header-contact-item{
@@ -183,4 +193,17 @@ color: var(--primary-text-color);
     fill: currentColor;
     margin-right: 10px;
     align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .header-contact-list{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-contact-list{
+        display: flex;
+        margin-left: 260px;
+    }
 }

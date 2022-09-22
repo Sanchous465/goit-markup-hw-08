@@ -130,11 +130,18 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+    margin-right: 93px;
+  }
 }
 
 span {
@@ -151,9 +158,14 @@ span {
 }
 
 .header-contact-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .header-contact-item {
+    margin-left: 50px;
+  }
+}
 .header-contact-item {
   display: flex;
   align-items: center;
@@ -247,6 +259,17 @@ li {
   align-self: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contact-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact-list {
+    display: flex;
+    margin-left: 260px;
+  }
+}
 .hero-section {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -752,6 +775,8 @@ li {
 .footer-soc-list {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-soc-icon {
@@ -768,6 +793,7 @@ li {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .footer-container {
@@ -801,6 +827,9 @@ li {
   border: none;
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .subscribe-icon {
