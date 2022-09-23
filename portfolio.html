@@ -13,9 +13,16 @@
     </head>
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
+        <div class="mob-header">
         <a href="WebStudio" class="header-logo">Web<span class="logo-accent">Studio</span></a>
+        <button type="button" class="menu-button" data-menu-open>
+            <svg class="icon-mobile-menu" width="40px" height="40px">
+                <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+        </div>
         <nav class="header-nav">
         
             <ul class="header-menu-list">
@@ -31,7 +38,7 @@
             </ul>
         
         </nav>
-        
+        <div class="cont-list">
         <ul class="header-contact-list">
             <li class="header-contact-item">
                 <a href="mailto:info@devstudio.com" class="header-mailto">
@@ -49,7 +56,50 @@
             </li>
         </ul>
         </div>
-</header> -->
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item mobile-menu-item1">
+                        <a href="index.html" class="mobile-menu-link">Студия</a>
+                    </li>
+                    <li class="mobile-menu-item mobile-menu-item2">
+                        <a href="portfolio.html" class="mobile-menu-link cur">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu-item mobile-menu-item3">
+                        <a href="Контакты" class="mobile-menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu-contact-list">
+                    <li class="mobile-menu-contact-tel">
+                        <a href="tel:+380961111111" class="mobile-menu-contact-tel-link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contact-mailto">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu-contact-mailto-link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu-soc-list">
+                    <li class="mobile-menu-soc-item mobile-menu-soc-item1">
+                        <a href="Instagram" class="mobile-menu-soc-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-soc-item">
+                        <a href="Twitter" class="mobile-menu-soc-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-soc-item">
+                        <a href="Facebook" class="mobile-menu-soc-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-soc-item">
+                        <a href="LinkedIn" class="mobile-menu-soc-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <main>
         <section class="portfolio-section">
@@ -57,11 +107,10 @@
             <ul class="portfolio-btn-list">
                 <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Все</button></li>
                 <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Веб-сайты</button></li>
-                <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Приложения</button></li>
-                <li class="portfolio-btn-item btn4"><button type="button" class="portfolio-btn">Дизайн</button></li>
-                <li class="portfolio-btn-item btn5"><button type="button" class="portfolio-btn">Маркетинг</button></li>
+                <li class="portfolio-btn-item"><button type="button" class="portfolio-btn portfolio-btn2">Приложения</button></li>
+                <li class="portfolio-btn-item btn4"><button type="button" class="portfolio-btn portfolio-btn1">Дизайн</button></li>
+                <li class="portfolio-btn-item btn5"><button type="button" class="portfolio-btn portfolio-btn1">Маркетинг</button></li>
             </ul>
-
 
 
 
@@ -202,8 +251,10 @@
 
 
     </main>
-        <!-- <footer class="footer">
+
+        <footer class="footer">
             <div class="container footer-container">
+                <div class="footer-tablet-container">
                 <div class="container-left">
                 <a href="WebStudio" class="footer-logo">Web<span class="logo-span">Studio</span></a>
                 <address class="footer-addres">
@@ -253,6 +304,7 @@
                         </li>
                     </ul>
                 </div>
+                </div>
                 <div class="container-right">
                     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
                     <ul class="subscribe-list">
@@ -275,7 +327,8 @@
                     </ul>
                 </div>
             </div>
-        </footer> -->
+        </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
