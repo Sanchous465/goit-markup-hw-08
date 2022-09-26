@@ -37,15 +37,17 @@ letter-spacing: 0.03em;
 color: var(--primary-white-color);
     text-decoration: none;
     font-style: normal;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:focus{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mailto{
@@ -56,15 +58,17 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mailto:focus{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mailto:hover{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel{
@@ -75,15 +79,17 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel:focus{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel:hover{
     color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link{
