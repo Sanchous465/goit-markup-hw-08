@@ -131,40 +131,53 @@ border-radius: 0px 0px 4px 4px;
     fill: #AFB1B8;
 }
 
-.tab1{
-    display: none;
-}
+// .tab1{
+//     display: none;
+// }
 
-.desk1{
-    display: none;
-}
+// .desk1{
+//     display: none;
+// }
 
-@media screen and (min-width: 768px) {
-    .mob1{
-        display: none;
+// @media screen and (min-width: 768px) {
+//     .mob1{
+//         display: none;
+//     }
+//     .tab1{
+//         display: block;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .tab1{
+//         display: none;
+//     }
+//     .desk1{
+//         display: block;
+//     }
+// }
+
+// .mob1{
+//     width: 100%;
+// }
+
+// .tab1{
+//     width: 100%;
+// }
+
+// .desk1{
+//     width: 100%;
+// }
+
+.team-img{
+    max-width: 450px;
+    height: 460px;
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        height: 374px;
     }
-    .tab1{
-        display: block;
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        height: 260px;
     }
-}
-
-@media screen and (min-width: 1200px) {
-    .tab1{
-        display: none;
-    }
-    .desk1{
-        display: block;
-    }
-}
-
-.mob1{
-    width: 100%;
-}
-
-.tab1{
-    width: 100%;
-}
-
-.desk1{
-    width: 100%;
 }

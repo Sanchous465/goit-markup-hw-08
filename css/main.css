@@ -756,40 +756,21 @@ li {
   fill: #AFB1B8;
 }
 
-.tab1 {
-  display: none;
+.team-img {
+  max-width: 450px;
+  height: 460px;
 }
-
-.desk1 {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .mob1 {
-    display: none;
-  }
-  .tab1 {
-    display: block;
+  .team-img {
+    max-width: 354px;
+    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .tab1 {
-    display: none;
+  .team-img {
+    max-width: 270px;
+    height: 260px;
   }
-  .desk1 {
-    display: block;
-  }
-}
-.mob1 {
-  width: 100%;
-}
-
-.tab1 {
-  width: 100%;
-}
-
-.desk1 {
-  width: 100%;
 }
 
 .clients {

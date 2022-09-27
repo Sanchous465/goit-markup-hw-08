@@ -173,7 +173,13 @@
             <ul class="occupation-section-list">
                 <li class="occupation-section-item">
                     <div class="occupation-cover-wrap">
-                    <img srcset="./img/img1-min.jpg 1x, ./img/img1-min2x.jpg 2x" src="./img/img1-min.jpg" alt="Занятия" width="370" height="294"/>
+                    <picture>
+                        <source
+                            srcset="./img/img1-min.jpg 1x, ./img/img1-min2x.jpg 2x"
+                        />
+                        <img src="./img/img1-min.jpg" alt="Занятия" width="370" height="294">
+                    </picture>
+                    <!-- <img srcset="./img/img1-min.jpg 1x, ./img/img1-min2x.jpg 2x" src="./img/img1-min.jpg" alt="Занятия" width="370" height="294"/> -->
                     <p class="occupation-cover-text">
                         Десктопные приложения
                     </p>
@@ -206,7 +212,22 @@
         </h2>
             <ul class="team-section-list">
                 <li class="team-section-item team-section-item1">
-                    <img 
+                    <picture>
+                        <source
+                            srcset="./img/img1-desk.jpg 1x, ./img/img1-desk2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="./img/img1-tab.jpg 1x, ./img/img1-tab2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="./img/img1-mob.jpg 1x, ./img/img1-mob2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                        <img src="./img/img1-mob.jpg" alt="Команда" class="team-img">
+                    </picture>
+                    <!-- <img 
                         srcset="./img/img1-mob.jpg 1x, ./img/img1-mob2x.jpg 2x"
                         src="./img/img1-mob.jpg" 
                         alt="Команда" 
@@ -223,7 +244,7 @@
                         src="./img/img1-desk.jpg" 
                         alt="Команда" 
                         class="desk1"
-                    />
+                    /> -->
                     <div class="team-container">
                     <h3 class="team-section-additional-title">
                         Игорь Демьяненко
@@ -264,7 +285,22 @@
                     </div>
                 </li>
                 <li class="team-section-item team-section-item2">
-                    <img 
+                    <picture>
+                        <source
+                            srcset="./img/img2-desk.jpg 1x, ./img/img2-desk2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="./img/img2-tab.jpg 1x, ./img/img2-tab2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="./img/img2-mob.jpg 1x, ./img/img2-mob2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                        <img src="./img/img2-mob.jpg" alt="Команда" class="team-img">
+                    </picture>
+                    <!-- <img 
                         srcset="./img/img2-mob.jpg 1x, ./img/img2-mob2x.jpg 2x"
                         src="./img/img2-mob.jpg" 
                         alt="Команда" 
@@ -281,7 +317,7 @@
                         src="./img/img2-desk.jpg" 
                         alt="Команда" 
                         class="desk1"
-                    />
+                    /> -->
                     <div class="team-container">
                     <h3 class="team-section-additional-title">
                         Ольга Репина
@@ -322,7 +358,22 @@
                     </div>
                 </li>
                 <li class="team-section-item team-section-item3">
-                    <img 
+                    <picture>
+                        <source
+                            srcset="./img/img3-desk.jpg 1x, ./img/img3-desk2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="./img/img3-tab.jpg 1x, ./img/img3-tab2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="./img/img3-mob.jpg 1x, ./img/img3-mob2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                        <img src="./img/img3-mob.jpg" alt="Команда" class="team-img">
+                    </picture>
+                    <!-- <img 
                         srcset="./img/img3-mob.jpg 1x, ./img/img3-mob2x.jpg 2x"
                         src="./img/img3-mob.jpg" 
                         alt="Команда" 
@@ -339,7 +390,7 @@
                         src="./img/img3-desk.jpg" 
                         alt="Команда" 
                         class="desk1"
-                    />
+                    /> -->
                     <div class="team-container">
                     <h3 class="team-section-additional-title">
                         Николай Тарасов
@@ -380,7 +431,22 @@
                     </div>
                 </li>
                 <li class="team-section-item team-section-item4">
-                    <img 
+                    <picture>
+                        <source
+                            srcset="./img/img4-desk.jpg 1x, ./img/img4-desk2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="./img/img4-tab.jpg 1x, ./img/img4-tab2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="./img/img4-mob.jpg 1x, ./img/img4-mob2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                        <img src="./img/img4-mob.jpg" alt="Команда" class="team-img">
+                    </picture>
+                    <!-- <img 
                         srcset="./img/img4-mob.jpg 1x, ./img/img4-mob2x.jpg 2x"
                         src="./img/img4-mob.jpg" 
                         alt="Команда" 
@@ -397,7 +463,7 @@
                         src="./img/img4-desk.jpg" 
                         alt="Команда" 
                         class="desk1"
-                    />
+                    /> -->
                     <div class="team-container">
                     <h3 class="team-section-additional-title">
                         Михаил Ермаков
